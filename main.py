@@ -19,7 +19,6 @@ async def main():
     @dp.message(Command("start"))
     async def cmd_start(message: Message):
         await message.answer("Привет! Я эхо-бот.")
-        await message.answer(HELP_TEXT)
 
     @dp.message(Command("help"))
     async def cmd_help(message: Message):
